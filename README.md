@@ -30,7 +30,7 @@ chmod +x install_udp.sh; ./install_udp.sh
 ## :octocat: by WakkoDEV
 <ul>
  <li>TELEGRAM CHANNEL: https://t.me/wakkovpn</li>
- <li>WEB: https://www.wakkovpn.ml</li>
+ <li>WEB: https://wakkovpn.ml</li>
  
  </ul>
  
