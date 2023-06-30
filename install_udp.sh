@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #
-# Try `install_agnudp.sh --help` for usage.
+# Try `install_udp.sh --help` for usage.
 #
-# (c) 2023 Khaled AGN
+# (c) 2023 WakkoDEV
 #
 
 set -e
@@ -545,18 +545,18 @@ check_hysteria_homedir() {
 
 show_usage_and_exit() {
 	echo
-	echo -e "\t$(tbold)$SCRIPT_NAME$(treset) - AGN-UDP server install script"
+	echo -e "\t$(tbold)$SCRIPT_NAME$(treset) - WAKKO-UDP server install script"
 	echo
 	echo -e "Usage:"
 	echo
-	echo -e "$(tbold)Install AGN-UDP$(treset)"
+	echo -e "$(tbold)Install WAKKO-UDP$(treset)"
 	echo -e "\t$0 [ -f | -l <file> | --version <version> ]"
 	echo -e "Flags:"
 	echo -e "\t-f, --force\tForce re-install latest or specified version even if it has been installed."
-	echo -e "\t-l, --local <file>\tInstall specified AGN-UDP binary instead of download it."
+	echo -e "\t-l, --local <file>\tInstall specified WAKKO-UDP binary instead of download it."
 	echo -e "\t--version <version>\tInstall specified version instead of the latest."
 	echo
-	echo -e "$(tbold)Remove AGN-UDP$(treset)"
+	echo -e "$(tbold)Remove WAKKO-UDP$(treset)"
 	echo -e "\t$0 --remove"
 	echo
 	echo -e "$(tbold)Check for the update$(treset)"
@@ -930,22 +930,21 @@ perform_install() {
 					        start_services
 						if [[ -n "$_is_frash_install" ]]; then
 							echo
-							echo -e "$(tbold)Congratulation! AGN-UDP has been successfully installed on your server.$(treset)"
+							echo -e "$(tbold)Congratulation! WAKKO-UDP has been successfully installed on your server.$(treset)"
 							echo
-							echo -e "$(tbold)Client app AGN INJECTOR:$(treset)"
-							echo -e "$(tblue)https://play.google.com/store/apps/details?id=com.agn.injector$(treset)"
+							echo -e "$(tbold)Client app HTTP Wakko Tunnel y Similares:$(treset)"
+							echo -e "$(tblue)https://play.google.com/store/apps/details?id=com.wakko.hwt$(treset)"
 							echo
-							echo -e "Follow me!"
+							echo -e "Sigueme!"
 							echo
-							echo -e "\t+ Check out my website at $(tblue)https://www.khaledagn.com$(treset)"
-							echo -e "\t+ Follow me on Telegram: $(tblue)https://t.me/khaledagn$(treset)"
-							echo -e "\t+ Follow me on Facebook: $(tblue)https://facebook.com/itskhaledagn$(treset)"
+							echo -e "\t+ Website at $(tblue)https://wakkovpn.ml$(treset)"
+							echo -e "\t+ Telegram: $(tblue)https://t.me/judabuac$(treset)"
 							echo
 							else
 								restart_running_services
 								
 								echo
-								echo -e "$(tbold)AGN-UDP has been successfully update to $VERSION.$(treset)"
+								echo -e "$(tbold)WAKKO-UDP has been successfully update to $VERSION.$(treset)"
 								echo
 								fi
 }
@@ -956,7 +955,7 @@ perform_remove() {
 	perform_remove_hysteria_systemd
 	
 	echo
-	echo -e "$(tbold)Congratulation! AGN-UDP has been successfully removed from your server.$(treset)"
+	echo -e "$(tbold)Congratulation! WAKKO-UDP has been successfully removed from your server.$(treset)"
 	echo
 	echo -e "You still need to remove configuration files and ACME certificates manually with the following commands:"
 	echo
