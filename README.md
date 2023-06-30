@@ -14,15 +14,15 @@ ESTE ES UN SCRIPT PARA LA INSTALACIÓN AUTOMÁTICA DE UDP (HYSTERIA SERVER)
 # Instalación
 
 
-// Descarga el script
+** Descarga el script
 ```
 wget https://github.com/hwanbustt/install_udp/raw/main/install_udp.sh
 ```
-// Edita la configurción del script
+** Edita la configurción del script
 ```
 nano install_udp.sh
 ```
-// Instala el script
+** Instala el script
 ```
 chmod +x install_udp.sh; ./install_udp.sh
 ```
