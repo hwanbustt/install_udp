@@ -930,21 +930,21 @@ perform_install() {
 					        start_services
 						if [[ -n "$_is_frash_install" ]]; then
 							echo
-							echo -e "$(tbold)Congratulation! WAKKO-UDP has been successfully installed on your server.$(treset)"
+							echo -e "$(tbold)Congratulation! WAKKO-UDP se ha instalado correctamente en su servidor.$(treset)"
 							echo
-							echo -e "$(tbold)Client app HTTP Wakko Tunnel y Similares:$(treset)"
+							echo -e "$(tbold)Cliente app HTTP Wakko Tunnel y Similares:$(treset)"
 							echo -e "$(tblue)https://play.google.com/store/apps/details?id=com.wakko.hwt$(treset)"
 							echo
 							echo -e "Sigueme!"
 							echo
-							echo -e "\t+ Website at $(tblue)https://wakkovpn.ml$(treset)"
+							echo -e "\t+ Sitio Web $(tblue)https://wakkovpn.ml$(treset)"
 							echo -e "\t+ Telegram: $(tblue)https://t.me/judabuac$(treset)"
 							echo
 							else
 								restart_running_services
 								
 								echo
-								echo -e "$(tbold)WAKKO-UDP has been successfully update to $VERSION.$(treset)"
+								echo -e "$(tbold)WAKKO-UDP se ha actualizado con éxito a $VERSION.$(treset)"
 								echo
 								fi
 }
@@ -955,9 +955,9 @@ perform_remove() {
 	perform_remove_hysteria_systemd
 	
 	echo
-	echo -e "$(tbold)Congratulation! WAKKO-UDP has been successfully removed from your server.$(treset)"
+	echo -e "$(tbold)Congratulation! WAKKO-UDP ha sido eliminado con éxito de su servidor.$(treset)"
 	echo
-	echo -e "You still need to remove configuration files and ACME certificates manually with the following commands:"
+	echo -e "Aún debe eliminar los archivos de configuración y los certificados ACME manualmente con los siguientes comandos:"
 	echo
 	echo -e "\t$(tred)rm -rf "$CONFIG_DIR"$(treset)"
 	if [[ "x$HYSTERIA_USER" != "xroot" ]]; then
@@ -965,7 +965,7 @@ perform_remove() {
 		fi
 		if [[ "x$FORCE_NO_SYSTEMD" != "x2" ]]; then
 			echo
-			echo -e "You still might need to disable all related systemd services with the following commands:"
+			echo -e "Es posible que aún deba deshabilitar todos los servicios systemd relacionados con los siguientes comandos:"
 			echo
 			echo -e "\t$(tred)rm -f /etc/systemd/system/multi-user.target.wants/hysteria-server.service$(treset)"
 			echo -e "\t$(tred)rm -f /etc/systemd/system/multi-user.target.wants/hysteria-server@*.service$(treset)"
@@ -977,13 +977,13 @@ perform_remove() {
 perform_check_update() {
 	if check_update; then
 		echo
-		echo -e "$(tbold)Update available: $VERSION$(treset)"
+		echo -e "$(tbold)Actualización disponible: $VERSION$(treset)"
 		echo
-		echo -e "$(tgreen)You can download and install the latest version by execute this script without any arguments.$(treset)"
+		echo -e "$(tgreen)Puede descargar e instalar la última versión ejecutando este script sin ningún argumento.$(treset)"
 		echo
 		else
 			echo
-			echo "$(tgreen)Installed version is up-to-dated.$(treset)"
+			echo "$(tgreen)La versión instalada está actualizada.$(treset)"
 			echo
 			fi
 }
