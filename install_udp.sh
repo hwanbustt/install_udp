@@ -24,7 +24,7 @@ UDP_PORT=":36712"
 # OBFS (Usuario)
 OBFS="wakko-udp"
 
-# PASSWORDS (COntraseña)
+# PASSWORDS (Contraseña)
 PASSWORD="wakko-udp"
 
 # Basename of this script
