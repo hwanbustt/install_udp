@@ -12,8 +12,8 @@ set -e
 # SCRIPT CONFIGURATION
 ###
 
-# Domain Name
-DOMAIN="vpn.khaledagn.com"
+# Domain o IP
+DOMAIN="udp1.wakkovpn.tk"
 
 # PROTOCOL
 PROTOCOL="udp"
@@ -21,11 +21,11 @@ PROTOCOL="udp"
 # UDP PORT
 UDP_PORT=":36712"
 
-# OBFS
-OBFS="agnudp"
+# OBFS (Usuario)
+OBFS="wakko-udp"
 
-# PASSWORDS
-PASSWORD="agnudp"
+# PASSWORDS (COntraseña)
+PASSWORD="wakko-udp"
 
 # Basename of this script
 SCRIPT_NAME="$(basename "$0")"
