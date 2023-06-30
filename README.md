@@ -16,7 +16,7 @@ ESTE ES UN SCRIPT PARA LA INSTALACIÓN AUTOMÁTICA DE UDP (HYSTERIA SERVER)
 
 ** Descarga el script
 ```
-wget https://github.com/hwanbustt/install_udp/raw/main/install_udp.sh
+wget https://github.com/wakkodev/install_udp/raw/main/install_udp.sh
 ```
 ** Edita la configurción del script
 ```
