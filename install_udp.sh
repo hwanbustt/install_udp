@@ -647,7 +647,7 @@ tpl_hysteria_server_service_base() {
 
   cat << EOF
 [Unit]
-Description=AGN-UDP Service
+Description=WAKKO-UDP Service
 After=network.target
 
 [Service]
