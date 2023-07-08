@@ -388,14 +388,14 @@ check_environment_curl() {
 	if has_command curl; then
 		return
 		fi
-		apt update; apt -y install curl
+		apt -y install curl
 }
 
 check_environment_grep() {
 	if has_command grep; then
 		return
 		fi
-		apt update; apt -y install grep
+		apt -y install grep
 }
 
 check_environment() {
