@@ -687,8 +687,8 @@ tpl_etc_hysteria_config_json() {
   "disable_udp": false,
   "obfs": "$OBFS",
   "auth": {
-	"mode": "passwords",
-	"config": ["$PASSWORD"]
+	"mode": "system",
+	"config": [""]
          }
 }
 EOF
